@@ -1,0 +1,8 @@
+*
+!.gitignore
+!.profile
+!.bashrc
+!.tozsh.sh
+!.zprofile
+!.zshrc
+!Makefile
