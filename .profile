@@ -26,9 +26,20 @@ if [ -d "$HOME/.local/bin" ] ; then
     PATH="$HOME/.local/bin:$PATH"
 fi
 
+# Add pyenv to path.
+# Commands suggested on zsh first run
+# Added here as well because so
+export PYENV_ROOT="$HOME/.pyenv"
+export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init --path)"
+
 export EDITOR='nano'
 
 # shell-agnostic aliases
 alias shellshow="echo $0"
 alias ll='ls -l'
 alias lsga='ls -gA'
+
+export PYENV_ROOT="$HOME/.pyenv"
+command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"

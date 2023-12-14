@@ -9,14 +9,17 @@
 #
 # alias install-zsh="curl \"https://gist.githubusercontent.com/dzuluaga/3bf775217728debf360a4377c7eb5118/raw/install-oh-my-zsh-gcp-cloud-shell.sh?$(date +%s)\" | sudo bash"
 
-
 echo 'Installing zsh...'
 sudo apt-get -yq install zsh
 
 echo 'Downloading and installing oh-my-zsh'
 sudo sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
-echo 'Remember to run $ zsh'
+echo
+echo '>>>>>>>> REMEMBER TO RUN <<<<<<<<<'
+echo '>>>>>>>> $ zsh'
+echo
+echo
 
 # echo "Next Steps"
 # echo

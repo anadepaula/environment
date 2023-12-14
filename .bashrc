@@ -113,4 +113,8 @@ fi
 alias zshinstall="cat $HOME/.tozsh.sh | sudo bash"
 
 # bash-specific aliases
-alias bashreload="source .bashrc"
+alias bashreload="source $HOME/.bashrc"
+
+export PYENV_ROOT="$HOME/.pyenv"
+command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"
